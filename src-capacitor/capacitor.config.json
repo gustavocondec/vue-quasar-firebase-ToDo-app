@@ -1,0 +1,7 @@
+{
+  "appId": "mi.app.todo",
+  "appName": "app-tareas",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
