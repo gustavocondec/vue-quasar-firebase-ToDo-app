@@ -7,7 +7,7 @@
 // https://quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
 
-const variables = require('./mis_variables')
+// const variables = require('./mis_variables')
 
 module.exports = function (/* ctx */) {
   return {
@@ -44,10 +44,16 @@ module.exports = function (/* ctx */) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       env: {
-        ...variables
+        VUE_APP_apiKey: 'AIzaSyDdvqPkYgzuxMfdlevMukU9wZMmBOrFcP8',
+        VUE_APP_authDomain: 'bluuweb-quasar.firebaseapp.com',
+        VUE_APP_databaseURL: 'https://bluuweb-quasar.firebaseio.com',
+        VUE_APP_projectId: 'bluuweb-quasar',
+        VUE_APP_storageBucket: 'bluuweb-quasar.appspot.com',
+        VUE_APP_messagingSenderId: '650906424628',
+        VUE_APP_appId: '1:650906424628:web:fb031e1e106f7f03a7c161'
       },
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // transpile: false,
 

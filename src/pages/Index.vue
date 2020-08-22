@@ -66,6 +66,7 @@ export default {
   async created () {
     console.log('Created')
     await this.listTasks()
+    // console.log('Lista de : ', process.env.VUE_APP_apiKey)
   },
   methods: {
     async listTasks () {
